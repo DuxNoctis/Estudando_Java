@@ -1,0 +1,13 @@
+Com base na Classe feita temos uma variavel composta do tipo "Triangle"
+Para melhorar nossa CLASSE, acrescentaremos nela um Método para calcular a área
+
+Métodos são funções!
+
+Desse modo, dentro da classe Triangle vamos ter um método que vai retornar o valor da área
+No caso de métodos que não retornam nada utilizamos a palavra "void"
+
+BENEFICIOS DE UTILIZAR MÉTODOS:
+Reaproveitamento de código: eliminamos o código repetido 
+Delegação de responsabilidades: quem deve ser responsável por saber como calcular a área de um triangulo
+é o próprio triangulo 
+

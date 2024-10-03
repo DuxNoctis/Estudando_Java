@@ -1,0 +1,58 @@
+
+-------------------------------------------CLASSE--------------------------------------------
+
+*É um tipo estruturado que pode conter(membros):
+ Atributos(dados/campos)
+ Métodos(funções/operações)
+
+*A classe também pode promover muitos outros recursos, tais como:
+Construtores
+Sobrecarga
+Encapsulamento
+Herança
+Polimorfismo
+
+*Exemplos
+Entidades: Produto, Cliente, Triângulo
+Serviços: ProdutoService, ClienteService, EmailService, StorageService
+Controladores: ProdutoController, CLienteController
+Utilitários: Calculadora, Compactador
+Outros(views, repositórios, gerenciadores, etc)
+
+
+
+Num programa feito sem a orientação a objetos tinhamos 6 variaveis
+
+OBSERVE COMO FICA NA MEMÓRIA
+double aX, bX, cX, aY, bY, cY, (isso representa os 3 lados de 2 triangulos(x, y))
+aX = 3.0            aY = 7.5    
+bX = 4.0            bY = 4.5
+cX = 5.0            cY = 4.02
+
+
+AGORA OBSERVE COMO FICA NA MEMÓRIA USANDO A ORIENTAÇÃO A OBJETOS
+
+Vamos dar um exemplo de classe que irá montar os atributos de um triangulo, ou seja, seus 3 lados
+
+Usando essa classe como base
+public class Triangulo{
+    public double a;
+    public double b;
+    public double c;
+}
+
+Triangulo x, y;
+x = new Triangulo();
+y = new Triangulo();
+
+Observe que o Triangulo agora virou um "tipo" assim como o double 
+Na memoria agora se comporta da seguinte forma 
+O x vai apontar para um objeto, esse objeto vai ser composto de 3 atributos (a,b,c), onde cada um deles vai possuir um valor
+
+O que antes eram 3 variaveis simples, se tornou 1 variavel composta 
+
+
+IMPORTANTE DESTACAR
+*Quando a variavel for do tipo classe deve se instanciar o objeto com a palavra "new"*
+
+

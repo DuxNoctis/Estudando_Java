@@ -1,0 +1,8 @@
+Scanner 
+
+Para fazer entrada de dados, nós vamos criar um objeto do tipo "Scanner" da seguinte forma:
+
+Scanner sc = new Scanner(System.in);
+*Lembrando que deve ser importado da seguinte forma, no inicio do código "import java.util.Scanner;"
+e quando não precisar mais do objeto "sc", deve ser feito "sc.close()"
+

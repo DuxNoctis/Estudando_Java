@@ -1,0 +1,6 @@
+REGRA GERAL BÁSICA
+
+Um objeto NÃO deve expor nenhum atributo(Modificador de acesso private)
+
+Os atributos devem ser acessados por meio de métodos get e set
+

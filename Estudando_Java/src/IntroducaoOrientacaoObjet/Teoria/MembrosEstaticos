@@ -1,0 +1,23 @@
+Membros = atributos e métodos
+
+*Também chamados de membros de classe
+
+*Não precisam de objetos para serem chamados, fazem sentido independente do objetos
+
+*Aplicações comuns:
+Classes utilitárias
+Declaração de constantes
+
+**Uma classe que possui somente mebros estáticos pode ser uma classe estática. Está classe não pode ser instanciada
+
+--Para declarar um valor constante, ou seja, que uma vez declarado não pode ser mudado, temos um modo:
+
+public static final double PI = 3,14
+
+
+
+Se eu faço um método para ser utilizado num programa Static, o método deve ser Static também
+
+geralmente utilizado quando não pretende instanciar um objeto de uma classe (Quando utilizo a própria Classe Main para fazer os métodos)
+
+SE UM MÉTODO NÃO PRECISA DE OBJETO PARA SER CHAMADO, OU SEJA, INDEPENDENTE DE SER INSTANCIADO MIL VEZES, IRÁ SEMPRE RETORNAR O MESMO VALOR, TRANSFORME EM STATIC(E chame passando o nome da Classe)

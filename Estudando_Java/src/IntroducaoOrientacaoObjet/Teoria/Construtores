@@ -1,0 +1,14 @@
+Construtor
+*Operação especial da classe, que executa no momento de instanciação do objeto
+
+Usos comuns:
+*iniciar valores dos atributos
+*Permitir que o objeto receba dados
+
+
+*Se um Construtor customizado não for especificado, a classe disponibiliza o contrutor padrão:
+Product p = new Product();
+
+*É possivel especificar mais de um construtor na mesma classe(Sobrecarga)
+
+

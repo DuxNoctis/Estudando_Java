@@ -1,0 +1,62 @@
+Comando de atribuição em JAVA.
+
+Sintaxe:
+<variavel> = <expressão>;
+
+1)A expressão é calculada;
+2)O resultado desta expressão é armazenado na variável
+
+
+
+Casting(Conversão explicitas dos valores)
+
+Vamos supor que possuimos o seguinte código:
+
+int a, b;
+double resultado;
+
+a = 5;
+b = 2;
+
+resultado = a / b;
+
+System.out.println(resultado);
+
+Este código retornará 2, mesmo nós sabemos que o resultado é 2,5 isso ocorre pelo segunte fato
+tanto a variavel "a", quanto a "b" são valores inteiros, isso significa que quando fazemos a expressão
+o JAVA entende que o resultado será um valor inteiro, assim ignorando a parte decimal da expressão.
+Para que isso não aconteça nós fazemos o Casting(Conversão explicita dos valores):
+
+int a, b;
+double resultado;
+
+a = 5;
+b = 2;
+
+resultado = (double) a / b;
+
+System.out.println(resultado);
+
+Neste exemplo nós convertemos explicitamente o valor da expressão em double, assim obtendo o verdadeiro valor. 
+Isso se faz necessario também, quando o compilador percebe que vamos perder alguma informação com a transformação:
+
+double a;
+int b;
+
+a = 5.5;
+b = a;
+
+system.out.print(b);
+
+Nesse caso o compilador olharia isso como um erro, pois nesta conversão o valor decimal seria perdido.
+Para demonstrar ao compilador que esta parte decimal não é importante devemos fazer da seguinte forma:
+
+double a;
+int b;
+
+a = 5.5;
+b = (int)a;
+
+system.out.print(b);
+
+Desta forma, demonstrando que o valor decimal é irrelevante para nós.

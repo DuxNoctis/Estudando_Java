@@ -1,0 +1,9 @@
+*TODA CLASSE EM JAVA É UMA SUBCLASSE DA CLASSE OBJECT
+
+*Object possui os seguintes métodos:
+getClass: retorna o tipo do objeto
+equals: compara se o objeto é igual ao outro
+hashCode: retorna um código hash do objeto
+toString: converte objeto para string 
+
+Exemplo no programa (pacoteMaterialExemplo) na classe Produtc

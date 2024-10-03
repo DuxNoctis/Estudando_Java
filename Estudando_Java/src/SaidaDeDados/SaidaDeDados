@@ -1,0 +1,35 @@
+import java.util.Locale; /*Importando Classe que define padrões de internacionalização. */
+
+public class SaidaDeDados{
+    /*Saida de dados comum*/
+    public static void main(String[] args){
+        int y = 32;
+        System.out.println(y);
+    
+    /*Saida de dados formatdando casas decimais */
+        double x = 45.5454;
+        System.out.printf("%.2f\n", x); /*Casas decimais print formatado*/
+
+    /*Saida de dados formatando para padrões internacionais*/
+        double z = 45.5454;
+        Locale.setDefault(Locale.US); /*Comando para utilizar a Classe importada no programa, que define padrões de local */
+        System.out.printf("%.2f\n", z); /*Casas decimais print formatado*/
+
+    /*Concatenação de elementos em JAVA*/
+        System.out.println("RESULTADOS = "+ y + " METROS");
+
+    /*Com o printf colocamos os marcadores e pós as variaveis em ordem da onde devem ocupar*/
+        System.out.printf("RESULTADO = %.2f METROS\n",x); /*o valor desse X após a virgula irá entrar no lugar do %.2f */
+
+    /* Concatenar varios elementos no mesmo comando de escrita
+    Existem também um padrão para os marcadores dependendo do tipo que será utilizado:
+    %f = usado para ponto flutuante
+    %d = usado para numeros inteiros
+    %s = usado para texto (string)
+    %n = quebra de linha ou também \n */
+        String nome = "Maria";
+        int idade = 31;
+        double renda = 4000.0;
+        System.out.printf("%s, tem %d anos e ganha em seu salario bruto R$%.2f reais%n", nome, idade,renda);
+    }
+}
